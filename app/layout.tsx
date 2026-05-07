@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Last.fm Widget",
-  description: "A simple widget to show your last played song from Last.fm",
+  description: "A simple widget to display your last played song from Last.fm",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full antialiased font-sans", inter.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col justify-center items-center">{children}</body>
     </html>
   );
 }
